@@ -28,7 +28,7 @@
 
 ## Project Proposal:<a id="proposal"></a>
 
-For the complete proposal report please refer to:\n
+For the complete proposal report please refer to:\
 [Project Proposal](0%20-%20Project%20Proposal.pdf) PDF File.
 
 ### Project Outline<a id="outline"></a>
@@ -228,6 +228,7 @@ Finally a Query was run on the database using pgAdmin to verify the data had loa
 * The root([/](/)) folder contains all the main working files.
     * The files are numbered in the order they were created and run.
     ![File Order](Images/file_order.png)
+    * 0 - Project Proposal.pdf - Jupyter notebook: Extraction and Transformation process of the Happiness Data
     * 1 - Happiness Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Happiness Data
     * 2 - Alcohol Consumption Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Alcohol Data
     * 3 - Merge Datasets.ipynb - Jupyter Notebook: Dataset Merge of Transformed Alcohol Consumption and Happiness Data
