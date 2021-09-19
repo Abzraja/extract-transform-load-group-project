@@ -4,9 +4,10 @@
 
 ## Contents
 * Project Proposal:
-*    1. Data Sources
-*    2. Final Production Database
-*    3. Findings
+*    1. Project Outline
+*    2. Data Sources
+*    3. Final Production Database
+*    4. Findings
 
 * Project Report:
 *    1. Extract
@@ -29,7 +30,19 @@
 
 ## Project Proposal:
 
+### Project Outline
+One might argue that people are momentarily happier when drinking alcohol -- but that over more extended periods, drinking more does not make them more satisfied with life. As such, the industry we have focused on is healthcare. 
+
+This project is an attempt to extract, transform and load a final dataset that can address questions behind how the use of alcohol impacts the happiness of nations around the globe.
+
+
 ### Data Sources
+We needed 2 data sets:
+
+1. [Alcohol Consumption Data](https://www.who.int/data/gho/data/indicators/indicator-details/GHO/total-(recorded-unrecorded)-alcohol-per-capita-(15-)-consumption) -
+(ref: World Health Organisation - Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2))
+
+2. [World Happiness Report]() - (ref: Kaggle.com - World Happiness Report up to 2020)
 
 ### Final Production Database
 
