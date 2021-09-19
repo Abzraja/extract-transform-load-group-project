@@ -15,9 +15,8 @@
         1. [Happiness Data](#happiness-data)
         2. [Alcohol Consumption Data](#alcohol-data)
 *    3. [Load](#load)
-
 * [Repository Structure](#repo)
-* [Main Working Files](#main)
+* [How to Run / Main Working Files](#main)
 * [Dependencies](#dependencies)
 *   1. [Environment](#environment)
 *   2. [Modules](#modules)
@@ -227,10 +226,11 @@ Finally a Query was run on the database using pgAdmin to verify the data had loa
     * [Resources/Output](Resources/Output) - Contains data that has been transformed, in the form of CSV files.
 
 
-## Main Working Files<a id="main"></a>
+## How to Run / Main Working Files<a id="main"></a>
 
-* The root([/](/)) folder contains all the main working files.
-    * The files are numbered in the order they were created and run.
+* The root([/](/)) folder contains all the main working files. They should opened and run in the numerical order assigned i.e. from 0 to 6.
+    * The files are numbered in the order they were created and run - they must be run in order.
+    * Each cell within Jupyter Notebook (.ipynb) files must also be run in order.
     ![File Order](Images/file_order.png)
     * 0 - Project Proposal.pdf - Jupyter notebook: Extraction and Transformation process of the Happiness Data
     * 1 - Happiness Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Happiness Data
@@ -272,7 +272,7 @@ Inside the config .py file, enter your username and password as in the image:
 * [PgAdmin](https://www.pgadmin.org/)<a id="pgadmin"></a>
 * [QuickDBD](https://www.quickdatabasediagrams.com/)<a id="quickdbd"></a>
 
-You will need to create a Database called "alcohol_vs" (without the quotes)
+Using pgAdmin, You will need to create a PostgreSQL Database called "alcohol_vs" (without the quotes).
 
 ## Team - Roles<a id="team"></a>
 
