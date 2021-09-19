@@ -71,11 +71,13 @@ More detailed findings in the [Proposal report](#proposal)
 ## Project Report:<a id="report"></a>
 
 ### Extract<a id="extract"></a>
-The original Data Sources used are outlined above in the Data Sources section.
+The original Data Sources used are outlined above in the [Data Sources](#sources) section.
 
-The files are contained in the Input directory.
+The files are contained in the Resources/Input directory.
 
-These CSV files were loaded into Pandas Dataframes by using the pd.read_csv Pandas function using Jupyter Notebook.
+Using [Jupyter Notebook](#notebook):
+
+These CSV files were loaded into [Pandas](#pandas) Dataframes by using the pd.read_csv Pandas function using Jupyter Notebook.
 
 ![Extract](Images/extract.png)
 
@@ -180,13 +182,13 @@ And finally the dataframe was exported to a CSV file.
 
 ### Load<a id="load"></a>
 
-A Table Schema reflecting our final dataframe was created using QuickDBD.
+A Table Schema reflecting our final dataframe was created using [QuickDBD](#quickdbd).
 
 ![TableSchemaDiagram](4%20-%20Table-Schema-Diagram.png)
 
 This was used to export a [PostgreSQL Table Schema](5%20-%20Table%20Schema.sql) .sql file.
 
-PgAdmin was used to create a Database and the code from the Table Schema SQL file was used a Query to create the table.
+[PgAdmin](#pgadmin) was used to create a Database and the code from the Table Schema SQL file was used a Query to create the table.
 
 ![Table Creation](Images/table_creation.png)
 
@@ -196,7 +198,7 @@ A Query was run to make sure the table had been created correctly.
 
 The final merged data was imported into a DataFrame in a new Notebook.
 
-For this step the SQlAlchemy module was also imported and also a Config file with the username and password of the PostgreSQL server and database is stored. This was done so the username and password is not leaked when uploaded to the repository.
+For this step the [SQlAlchemy](#sqlalchemy) module was also imported and also a [Config](#config) file with the username and password of the PostgreSQL server and database is stored. This was done so the username and password is not leaked when uploaded to the repository.
 
 
 ![Import Final Data](Images/import_final.png)
@@ -268,6 +270,7 @@ Inside the config .py file, enter your username and password as in the image:
 
 ## Software Used
 * [PgAdmin](https://www.pgadmin.org/)<a id="pgadmin"></a>
+* [QuickDBD](https://www.quickdatabasediagrams.com/)<a id="quickdbd"></a>
 
 You will need to create a Database called "alcohol_vs" (without the quotes)
 
