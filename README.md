@@ -3,41 +3,41 @@
 ![Title Image](Images/etl.png)
 
 ## Contents
-* Project Proposal:
-*    1. Project Outline
-*    2. Data Sources
-*    3. Final Production Database
-*    4. Findings
+* [Project Proposal](#proposal):
+*    1. [Project Outline](#outline)
+*    2. [Data Sources](#sources)
+*    3. [Final Production Database](#final-production-db)
+*    4. [Findings](#findings)
 
-* Project Report:
-*    1. Extract
-*    2. Transform
-        1. Happiness Data
-        2. Alcohol Consumption Data
-*    3. Load
+* [Project Report](#report):
+*    1. [Extract](#extract)
+*    2. [Transform](#transform)
+        1. [Happiness Data](#happiness-data)
+        2. [Alcohol Consumption Data](#alcohol-data)
+*    3. [Load](#load)
 
-* Repository Structure
-*    1. Root (/)
-*    2. Images (/Images)
-*    3. Resources (/Resources)
-
-* Main Working Files
-* Dependencies
-*   1. Modules
-*   2. Config password file
-* Software Used
-* Team - Roles
+* [Repository Structure](#repo)
+* [Main Working Files](#main)
+* [Dependencies](#dependencies)
+*   1. [Environment](#environment)
+*   2. [Modules](#modules)
+*   3. [Config password file](#config)
+* [Software Used](#software)
+* [Team - Roles](#team)
 
 
-## Project Proposal:
+## Project Proposal:<a id="proposal"></a>
 
-### Project Outline
+For the complete proposal report please refer to:\n
+[Project Proposal](0 - Project Proposal.pdf) PDF File.
+
+### Project Outline<a id="outline"></a>
 One might argue that people are momentarily happier when drinking alcohol -- but that over more extended periods, drinking more does not make them more satisfied with life. As such, the industry we have focused on is healthcare. 
 
 This project is an attempt to extract, transform and load a final dataset that can address questions behind how the use of alcohol impacts the happiness of nations around the globe.
 
 
-### Data Sources
+### Data Sources<a id="sources"></a>
 We needed 2 data sets:
 
 1. [Alcohol Consumption Data](https://www.who.int/data/gho/data/indicators/indicator-details/GHO/total-(recorded-unrecorded)-alcohol-per-capita-(15-)-consumption) -
@@ -56,19 +56,19 @@ There are 3 files in this folder:
 2. 2015.csv (Happiness data for 2015)
 3. 2019.csv (Happiness data for 2019)
 
-### Final Production Database
+### Final Production Database<a id="final-production-db"></a>
 For the final data both a Relational Database such as SQL or a Non-Relational database such as Mongo DB, could have been used.
 
 We chose to load the data into a PostgreSQL database which is a Relational Database.
 
 The reason for using a Relational Database is because they are better suited to our purpose due to the ability to write complex SQL queries for data analysis and reporting.
 
-### Findings
+### Findings<a id="findings"></a>
 The resulting dataset can be used for future analysis to determine if alcohol consumption can predict happiness score, GDP per capita or healthy life expectancy. 
 
-## Project Report:
+## Project Report:<a id="report"></a>
 
-### Extract
+### Extract<a id="extract"></a>
 The original Data Sources used are outlined above in the Data Sources section.
 
 The files are contained in the Input directory.
@@ -77,9 +77,9 @@ These CSV files were loaded into Pandas Dataframes by using the pd.read_csv Pand
 
 ![Extract](Images/extract.png)
 
-### Transform
+### Transform<a id="transform"></a>
 
-#### Happiness Data
+#### Happiness Data<a id="happiness-data"></a>
 
 To transform the data we needed to first analyse the data and select which data we needed.
 
@@ -104,7 +104,7 @@ Then finally the data was concatenated into a single dataframe and exported to a
 ![ConcatenateDataframe](Images/concatenate.png)
 
 
-#### Alcohol Consumption Data
+#### Alcohol Consumption Data<a id="alcohol-data"></a>
 
 The downloaded file was imported into Pandas
 
@@ -176,7 +176,7 @@ And finally the dataframe was exported to a CSV file.
 
 ![Sort Values](Images/sort_values.png)
 
-### Load
+### Load<a id="load"></a>
 
 A Table Schema reflecting our final dataframe was created using QuickDBD.
 
@@ -213,30 +213,62 @@ Finally a Query was run on the database using pgAdmin to verify the data had loa
 ![verify data load](Images/verify_load.png)
 
 
-## Respository Structure
+## Respository Structure<a id="repo"></a>
+* Root folder([/](/))  - Contains Main Notebook files and Table Schema files. These files have been prefixed with a number to designate the order they were completed and run.
 
-## Main Working Files
+* Images Folder ([Images/](Images/)) - Contains image files used in README.
 
-## Dependencies
+* Resources Folder ([Resources](Resources/)) - Contains Input and Output Folders.
+    * [Resources/Input](Resources/Input) - Contains original data from downloaded data sets, in the form of CSV files.
+    * [Resources/Output](Resources/Output) - Contains data that has been transformed, in the form of CSV files.
 
-### Modules
 
-### Config password file
+## Main Working Files<a id="main"></a>
+
+* The root([/](/)) folder contains all the main working files.
+    * The files are numbered in the order they were created and run.
+    ![File Order](Images/file_order.png)
+    * 1 - Happiness Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Happiness Data
+    * 2 - Alcohol Consumption Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Alcohol Data
+    * 3 - Merge Datasets.ipynb - Jupyter Notebook: Dataset Merge of Transformed Alcohol Consumption and Happiness Data
+    * 4 - Table-Schema-Diagram.png - Image File: Table Schema Diagram from QuickDBD
+    * 5 - Table Schema.sql - SQL File: SQL code to create PostgreSQL Table
+    * 6 - Load Data.ipynb - Jupyter Notebook: Importing and Loading Merged Data into PostgreSQL database table.
+
+
+## Dependencies<a id="Dependencies"></a>
+### Python Environment and Package Mananger<a id="environment"></a>
+* [Anaconda](https://www.anaconda.com/products/individual)
+
+### Modules<a id="modules"></a>
+
+You can use conda or pip to install the packages below
+
+e.g. `pip install Pandas`\
+e.g. `conda install Pandas`
+
+* [Jupyter Notebook](https://jupyter.org/install.html)<a id="notebook"></a>
+* [Pandas](https://pypi.org/project/pandas/)<a id="pandas"></a>
+* [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)<a id="sqlalchemy"></a>
+* [Psycopg2](https://pypi.org/project/psycopg2/)<a id="psycopg2"></a>
+
+### Config password file<a id="config"></a>
 
 ## Software Used
+* [PgAdmin](https://www.pgadmin.org/)<a id="pgadmin"></a>
 
-## Team - Roles
+## Team - Roles<a id="team"></a>
 
 Although each person worked primarily on their allocated task, all steps were reviewed and completed as a team effort.
 
-* Elena Dragomir
+* [Elena Dragomir](https://github.com/elliedragomir)
     * Primary task: Project Outline and Proposal and Finding Datasets
     * Secondary task: ETL (Extract, Transform, Load) Process.
 
-* Mini Yadav 
+* [Mini Yadav](https://github.com/Miniy751) 
     * Primary task: ETL (Extract, Transform, Load) Process
     * Secondary task: Finding Datasets
 
-* Abdurrahman Raja
+* [Abdurrahman Raja](https://github.com/Abzraja)
     * Primary task: PostgreSQL Table Schema, PostgreSQL Table Creation and README.
     * Secondary task: ETL (Extract, Transform, Load) Process
