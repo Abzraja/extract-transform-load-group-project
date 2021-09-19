@@ -29,7 +29,7 @@
 ## Project Proposal:<a id="proposal"></a>
 
 For the complete proposal report please refer to:\n
-[Project Proposal](0 - Project Proposal.pdf) PDF File.
+[Project Proposal](0%20-%20Project%20Proposal.pdf) PDF File.
 
 ### Project Outline<a id="outline"></a>
 One might argue that people are momentarily happier when drinking alcohol -- but that over more extended periods, drinking more does not make them more satisfied with life. As such, the industry we have focused on is healthcare. 
