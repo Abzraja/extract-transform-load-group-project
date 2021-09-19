@@ -42,7 +42,13 @@ We needed 2 data sets:
 1. [Alcohol Consumption Data](https://www.who.int/data/gho/data/indicators/indicator-details/GHO/total-(recorded-unrecorded)-alcohol-per-capita-(15-)-consumption) -
 (ref: World Health Organisation - Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2))
 
+A dataset with alcohol consumed per person on average for each country.
+
 2. [World Happiness Report]() - (ref: Kaggle.com - World Happiness Report up to 2020)
+
+A dataset with Happiness metrics, such as GDP per capita, Healthy Life Expecatancy and a Happiness score. 
+
+These data sets were downloaded as CSV files and stored in the Input folder ([/Resources/Input](/Resources/Input))
 
 ### Final Production Database
 
