@@ -45,7 +45,7 @@ We needed 2 data sets:
 
 A dataset with alcohol consumed per person on average for each country.
 
-2. [World Happiness Report]() - (ref: Kaggle.com - World Happiness Report up to 2020)
+2. [World Happiness Report](https://www.kaggle.com/mathurinache/world-happiness-report) - (ref: Kaggle.com - World Happiness Report up to 2020)
 
 A dataset with Happiness metrics, such as GDP per capita, Healthy Life Expecatancy and a Happiness score. 
 
@@ -65,6 +65,8 @@ The reason for using a Relational Database is because they are better suited to 
 
 ### Findings<a id="findings"></a>
 The resulting dataset can be used for future analysis to determine if alcohol consumption can predict happiness score, GDP per capita or healthy life expectancy. 
+
+More detailed findings in the [Proposal report](#proposal)
 
 ## Project Report:<a id="report"></a>
 
@@ -254,9 +256,20 @@ e.g. `conda install Pandas`
 * [Psycopg2](https://pypi.org/project/psycopg2/)<a id="psycopg2"></a>
 
 ### Config password file<a id="config"></a>
+A Config.py file containing the user and password of your PostgreSQL server must be created and stored in the root folder.
+
+This file has been added to the Repository .gitignore file so it is not uploaded/pushed to the repository.
+
+Create a config .py file in the root folder.
+![Config.py](Images/config.png)
+
+Inside the config .py file, enter your username and password as in the image:
+![Config Info](Images/config_info.png)
 
 ## Software Used
 * [PgAdmin](https://www.pgadmin.org/)<a id="pgadmin"></a>
+
+You will need to create a Database called "alcohol_vs" (without the quotes)
 
 ## Team - Roles<a id="team"></a>
 
