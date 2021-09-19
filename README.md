@@ -6,7 +6,7 @@
 * Project Proposal:
 *    1. Data Sources
 *    2. Final Production Database
-*   3. Findings
+*    3. Findings
 
 * Project Report:
 *    1. Extract
@@ -19,7 +19,41 @@
 *    3. Resources (/Resources)
 
 * Main Working Files
-* Python Modules
+* Dependencies
+*   1. Modules
+*   2. Config password file
 * Software Used
 * Config password file
 * Team - Roles
+
+
+## Project Proposal:
+
+### Data Sources
+
+### Final Production Database
+
+### Findings
+
+## Project Report:
+
+### Extract
+
+### Transform
+
+### Load
+
+
+## Respository Structure
+
+## Main Working Files
+
+## Dependencies
+
+### Modules
+
+### Config password file
+
+## Software Used
+
+
