@@ -66,22 +66,23 @@ The resulting dataset can be used for future analysis to determine if alcohol co
 
 More detailed findings in the [Proposal report](#proposal)<br />
 <br />
-## Project Report
+
+## Project Report (Extract, Transform, Load Outline) <a id="report"></a>
 
 #### Detailed step by step guide of all Extract, Transform and Load steps undertaken can be found here: [Technical Steps](/Technical%20Steps/Technical.md)
 
 A brief outline is given here:
-### Extract
+### Extract <a id="extract"></a>
 * Download dataset files from Kaggle and import into Dataframes using Pandas.
 
-### Transform
+### Transform <a id="transform"></a>
 #### Why Transform the Data? - We wanted to analyse if there is any relationship between alcohol consumption and happiness. 
 * Therefore we only want data that is relevant or pertinent to our objective. Any data deemed irrelant for our purpose is dropped/discarded.
 * Columns are renamed for consistency between datasets.
 * Time period (Years) are matched so that we can observe the Happiness Data against the Alcohol Consumption Data for the same year.
 * Datasets are combined so we can look for relationships between the datasets.
 
-##### Happiness Data Transformation
+##### Happiness Data Transformation <a id="happiness-data"></a>
 * Drop unrequired columns from Happiness Dataset (columns deemed not be directly related to Alcohol Consumption).
 * Rename Columns for Readability and Consistency and for the purpose of Concatenating the dataframes.
 * Add Year Column to designate which Year the data represents.
@@ -89,7 +90,7 @@ A brief outline is given here:
 * Concatenated dataframes and exported to CSV.
 <br />
 
-##### Alcohol Consumption Data Transformation
+##### Alcohol Consumption Data Transformation <a id="alcohol-data"></a>
 * Drop unrequired columnns from the dataset.
 * Rename columns for consistency between this dataset and the Happiness dataset.
 * Filter dataset to match the years from the Happiness Dataset.
@@ -110,7 +111,7 @@ A brief outline is given here:
 * Export to CSV
 <br />
 
-### Load
+### Load <a id="load"></a>
 * Create Table Schema using QuickDBD and export to SQL file.
 * Use SQL file to create Tables in Postgres Database using pgAdmin.
 * Load previously exported merged data into new dataframe.
