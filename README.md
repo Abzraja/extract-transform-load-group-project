@@ -72,11 +72,53 @@ More detailed findings in the [Proposal report](#proposal)<br />
 
 A brief outline is given here:
 ### Extract
-
+* Download dataset files from Kaggle and import into Dataframes using Pandas.
 
 ### Transform
+#### Why Transform the Data? - We wanted to analyse if there is any relationship between alcohol consumption and happiness. 
+* Therefore we only want data that is relevant or pertinent to our objective. Any data deemed irrelant for our purpose is dropped/discarded.
+* Columns are renamed for consistency between datasets.
+* Time period (Years) are matched so that we can observe the Happiness Data against the Alcohol Consumption Data for the same year.
+* Datasets are combined so we can look for relationships between the datasets.
+
+##### Happiness Data Transformation
+* Drop unrequired columns from Happiness Dataset (columns deemed not be directly related to Alcohol Consumption).
+* Rename Columns for Readability and Consistency and for the purpose of Concatenating the dataframes.
+* Add Year Column to designate which Year the data represents.
+* Repeated steps for 2019 Happiness Data.
+* Concatenated dataframes and exported to CSV.
+<br />
+
+##### Alcohol Consumption Data Transformation
+* Drop unrequired columnns from the dataset.
+* Rename columns for consistency between this dataset and the Happiness dataset.
+* Filter dataset to match the years from the Happiness Dataset.
+* Transform Litres per Capita column to to only contain the value required.
+* Change dataframe column data types accordingly. e.g. numerical columns changed from object to numerical (string to integer/float).
+* Export to CSV.
+<br />
+
+##### Combine Datasets Transformation
+* Import previous exported CSVs containting the transformed data into a new notebook, taking care to drop the index.
+* Set country as index for the Alcohol Consumption dataframe.
+* Merge the transformed Alchol Consumption dataframe and Happiness dataframe on the Year and Country columns.
+* Re order the columns for presentation.
+* Check for missing values
+* Set the country as the index for the merged dataframe.
+* Rename the columns to match the Table Schema for Postgres.
+* Sort merged dataframe by most to least alcohol consumed.
+* Export to CSV
+<br />
 
 ### Load
+* Create Table Schema using QuickDBD and export to SQL file.
+* Use SQL file to create Tables in Postgres Database using pgAdmin.
+* Load previously exported merged data into new dataframe.
+* Use SQL Alchemy to creation connection from Jupyter notebook to Postgres database.
+* Verify database conneciton by using inspect command to view tables in database.
+* Use to_sql function to export the merged data to the Postgres database table.
+* Use SQL query in pgAdmin to verify data was successfully loaded. 
+
 
 
 
