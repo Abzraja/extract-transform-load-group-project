@@ -68,7 +68,7 @@ More detailed findings in the [Proposal report](#proposal)<br />
 <br />
 ## Project Report
 
-* Detailed step by step guide of all Extract, Transform and Load steps undertaken can be found here: [Technical Steps](/Techincal%20Steps/Technical.md)
+#### Detailed step by step guide of all Extract, Transform and Load steps undertaken can be found here: [Technical Steps](/Technical%20Steps/Technical.md)
 
 A brief outline is given here:
 ### Extract
