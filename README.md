@@ -27,7 +27,7 @@
 ## Project Proposal:<a id="proposal"></a>
 
 For the complete proposal report please refer to:\
-[Project Proposal](0%20-%20Project%20Proposal.pdf) PDF File.
+[Project Proposal](/Proposal%20Report/Project%20Proposal.pdf) PDF File.
 
 ### Project Outline<a id="outline"></a>
 One might argue that people are momentarily happier when drinking alcohol -- but that over more extended periods, drinking more does not make them more satisfied with life. As such, the industry we have focused on is healthcare. 
@@ -64,11 +64,19 @@ The reason for using a Relational Database is because they are better suited to 
 ### Findings<a id="findings"></a>
 The resulting dataset can be used for future analysis to determine if alcohol consumption can predict happiness score, GDP per capita or healthy life expectancy. 
 
-More detailed findings in the [Proposal report](#proposal)
-
-Project Report
+More detailed findings in the [Proposal report](#proposal)<br />
+<br />
+## Project Report
 
 * Detailed step by step guide of all Extract, Transform and Load steps undertaken can be found here: [Technical Steps](/Techincal%20Steps/Technical.md)
+
+A brief outline is given here:
+### Extract
+
+
+### Transform
+
+### Load
 
 
 
