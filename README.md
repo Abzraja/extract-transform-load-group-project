@@ -15,11 +15,7 @@
         1. [Happiness Data](#happiness-data)
         2. [Alcohol Consumption Data](#alcohol-data)
 *    3. [Load](#load)
-* [How to Run / Main Working Files](#main)
-* [Dependencies](#dependencies)
-*   1. [Environment](#environment)
-*   2. [Modules](#modules)
-*   3. [Config password file](#config)
+* [Config password file](#config)
 * [Software Used](#software)
 * [Team - Roles](#team)
 
@@ -120,27 +116,6 @@ A brief outline is given here:
 * Use to_sql function to export the merged data to the Postgres database table.
 * Use SQL query in pgAdmin to verify data was successfully loaded. 
 
-
-
-
-## How to Run / Main Working Files<a id="main"></a>
-* Table Schema is stored in [/Table Schema](/Table%20Schema) folder.
-* Use the Table Schema.sql file to create a Tables in Postgres Database.
-
-* The root([/Notebooks](/Notebooks)) folder contains all the main working files. They should opened and run in the numerical order assigned i.e. from 1 to 4.
-
-    * 0 - Project Proposal.pdf - Jupyter notebook: Extraction and Transformation process of the Happiness Data
-    * 1 - Happiness Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Happiness Data
-    * 2 - Alcohol Consumption Data.ipynb - Jupyter notebook: Extraction and Transformation process of the Alcohol Data
-    * 3 - Merge Datasets.ipynb - Jupyter Notebook: Dataset Merge of Transformed Alcohol Consumption and Happiness Data
-    * 4 - Load Data.ipynb - Jupyter Notebook: Importing and Loading Merged Data into PostgreSQL database table.
-
-
-## Dependencies<a id="Dependencies"></a>
-You will need a Python Environment.
-
-Requirements.txt file in root directory contains all packaged used.
-pipinstall -r requirements. txt
 
 ### Config password file<a id="config"></a>
 A Config.py file containing the user and password of your PostgreSQL server must be created and stored in the root folder.
